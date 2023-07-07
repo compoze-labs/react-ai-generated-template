@@ -15,7 +15,7 @@ fi
 
 APPNAME="${PRODUCT_NAME}-${ENV}"
 
-npm build:environment ${ENV}
+npm run build:environment ${ENV}
 APPID=$(aws amplify list-apps | jq -r ".apps[] | select(.name==\"${APPNAME}\") | .appId")
 
 BUILD_DIR="${SCRIPT_DIR}/../build"
