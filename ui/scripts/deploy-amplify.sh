@@ -4,8 +4,6 @@ SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 set -euo pipefail
 
 PRODUCT_NAME=$1
-COMPONENT_NAME=$2
-
 
 # check if environment variable, ENV, is set. If not, print error and exit
 if [ -z "${ENV:-}" ]; then
